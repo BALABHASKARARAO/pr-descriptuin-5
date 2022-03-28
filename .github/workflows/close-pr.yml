@@ -15,7 +15,7 @@ jobs:
         #continue-on-error: true
   comment:
     #if: contains(github.event.comment.body, '')
-    #runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Add comment to PR
         env:
@@ -28,4 +28,3 @@ jobs:
             -H "Content-Type: application/json" \
             -H "Authorization: token $GITHUB_TOKEN" \
             --data '{ "body": "blah blah" }'
-  
