@@ -15,7 +15,7 @@ jobs:
         #continue-on-error: true
   comment:
     #if: contains(github.event.comment.body, '')
-    runs-on: ubuntu-latest
+    #runs-on: ubuntu-latest
     steps:
       - name: Add comment to PR
         env:
